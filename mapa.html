@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_717a1ce3ce607c58432892d619f5a5c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_717a1ce3ce607c58432892d619f5a5c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_717a1ce3ce607c58432892d619f5a5c2 = L.map(
+                "map_717a1ce3ce607c58432892d619f5a5c2",
+                {
+                    center: [-23.515367, -46.689835],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf02075799a6cf5a8770d4d1c093683f = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bf02075799a6cf5a8770d4d1c093683f.addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var marker_cfa8ff4fd322f0c45ffd986b0ab8da0c = L.marker(
+                [-23.515367, -46.689835],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_8932035ba9d44ca34a81323128fa7c9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af147019381829f39c2b253aaf3a530a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5615db08bc2c04a4735aa7617c0d6cfd = $(`<div id="html_5615db08bc2c04a4735aa7617c0d6cfd" style="width: 100.0%; height: 100.0%;">PEDRO CORAZZA B/C</div>`)[0];
+                popup_af147019381829f39c2b253aaf3a530a.setContent(html_5615db08bc2c04a4735aa7617c0d6cfd);
+            
+        
+
+        marker_cfa8ff4fd322f0c45ffd986b0ab8da0c.bindPopup(popup_af147019381829f39c2b253aaf3a530a)
+        ;
+
+        
+    
+    
+                marker_cfa8ff4fd322f0c45ffd986b0ab8da0c.setIcon(icon_8932035ba9d44ca34a81323128fa7c9f);
+            
+    
+            var marker_a73793ea82d2c6fcc5545cdf6598e08d = L.marker(
+                [-23.516377, -46.685514],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_40c3e33614621f17aff6b0a40d6799d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44fd873dc5d30e97398948a4165282d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_296718d5810c415893db663668e79a83 = $(`<div id="html_296718d5810c415893db663668e79a83" style="width: 100.0%; height: 100.0%;">NACIONAL - B/C</div>`)[0];
+                popup_44fd873dc5d30e97398948a4165282d9.setContent(html_296718d5810c415893db663668e79a83);
+            
+        
+
+        marker_a73793ea82d2c6fcc5545cdf6598e08d.bindPopup(popup_44fd873dc5d30e97398948a4165282d9)
+        ;
+
+        
+    
+    
+                marker_a73793ea82d2c6fcc5545cdf6598e08d.setIcon(icon_40c3e33614621f17aff6b0a40d6799d4);
+            
+    
+            var marker_60b00bcafbd65f17ec505bfbb1763066 = L.marker(
+                [-23.517458, -46.681635],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_b5b0d618788ff1c79f4648df4de63936 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_527cab92fe56ab9e06e5937f6647f9b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9310f538c763226ad7a9f14de13a269f = $(`<div id="html_9310f538c763226ad7a9f14de13a269f" style="width: 100.0%; height: 100.0%;">CETET - B/C</div>`)[0];
+                popup_527cab92fe56ab9e06e5937f6647f9b7.setContent(html_9310f538c763226ad7a9f14de13a269f);
+            
+        
+
+        marker_60b00bcafbd65f17ec505bfbb1763066.bindPopup(popup_527cab92fe56ab9e06e5937f6647f9b7)
+        ;
+
+        
+    
+    
+                marker_60b00bcafbd65f17ec505bfbb1763066.setIcon(icon_b5b0d618788ff1c79f4648df4de63936);
+            
+    
+            var marker_89330268be07bfacff4ebc74415997b6 = L.marker(
+                [-23.4816, -46.67539],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_b1ac7bdaa38fdba5d456934ba6d7d7c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3443c418cefe62808975977d7009ea4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aca8ca0e0f7f5c2348401d1ff39d5eee = $(`<div id="html_aca8ca0e0f7f5c2348401d1ff39d5eee" style="width: 100.0%; height: 100.0%;">EDSON PELLEGRINI B/C</div>`)[0];
+                popup_3443c418cefe62808975977d7009ea4d.setContent(html_aca8ca0e0f7f5c2348401d1ff39d5eee);
+            
+        
+
+        marker_89330268be07bfacff4ebc74415997b6.bindPopup(popup_3443c418cefe62808975977d7009ea4d)
+        ;
+
+        
+    
+    
+                marker_89330268be07bfacff4ebc74415997b6.setIcon(icon_b1ac7bdaa38fdba5d456934ba6d7d7c7);
+            
+    
+            var marker_e170b431c5bb1cb33404ea531f707f39 = L.marker(
+                [-23.484125, -46.679744],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_95c733c7e7cca9c5d4e7f585a9d54d19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80323ec6cbda76dd6e566a99c0d7d0f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43fa9c3e2adee85ae0fce19155a1a2df = $(`<div id="html_43fa9c3e2adee85ae0fce19155a1a2df" style="width: 100.0%; height: 100.0%;">DELFIM MOREIRA B/C</div>`)[0];
+                popup_80323ec6cbda76dd6e566a99c0d7d0f2.setContent(html_43fa9c3e2adee85ae0fce19155a1a2df);
+            
+        
+
+        marker_e170b431c5bb1cb33404ea531f707f39.bindPopup(popup_80323ec6cbda76dd6e566a99c0d7d0f2)
+        ;
+
+        
+    
+    
+                marker_e170b431c5bb1cb33404ea531f707f39.setIcon(icon_95c733c7e7cca9c5d4e7f585a9d54d19);
+            
+    
+            var marker_aaf52990e7decf27322e60cf74b4cc15 = L.marker(
+                [-23.48673, -46.682207],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_c4e61c744aa8b41ce7b3984751e3fd74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_089216e1070df0ecbd958c6161b02ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1d6c8df15f03bb0aa4d837b2b5ddf58 = $(`<div id="html_a1d6c8df15f03bb0aa4d837b2b5ddf58" style="width: 100.0%; height: 100.0%;">PARADA INACIO LEITAO B/C</div>`)[0];
+                popup_089216e1070df0ecbd958c6161b02ae1.setContent(html_a1d6c8df15f03bb0aa4d837b2b5ddf58);
+            
+        
+
+        marker_aaf52990e7decf27322e60cf74b4cc15.bindPopup(popup_089216e1070df0ecbd958c6161b02ae1)
+        ;
+
+        
+    
+    
+                marker_aaf52990e7decf27322e60cf74b4cc15.setIcon(icon_c4e61c744aa8b41ce7b3984751e3fd74);
+            
+    
+            var marker_543673bd162980f5c4da054d7bee8c49 = L.marker(
+                [-23.49264, -46.685329],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_b7c3415eaa168a2a43b3aad7f00b17ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec22dd7957cb1b81471eeaccac5c62dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_509b7b941210f003f2d4170839dc6272 = $(`<div id="html_509b7b941210f003f2d4170839dc6272" style="width: 100.0%; height: 100.0%;">PARADA BENEDITO GUEDES DE OLIVEIRA B/C</div>`)[0];
+                popup_ec22dd7957cb1b81471eeaccac5c62dd.setContent(html_509b7b941210f003f2d4170839dc6272);
+            
+        
+
+        marker_543673bd162980f5c4da054d7bee8c49.bindPopup(popup_ec22dd7957cb1b81471eeaccac5c62dd)
+        ;
+
+        
+    
+    
+                marker_543673bd162980f5c4da054d7bee8c49.setIcon(icon_b7c3415eaa168a2a43b3aad7f00b17ee);
+            
+    
+            var marker_53476516790693b391384b5a6d9571b3 = L.marker(
+                [-23.502521, -46.687603],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_2e4a98aaad6828dc85593455fae78416 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c534ecff705df591ccbddf4affbdad4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_133059349297c63c77ed97b0437973f0 = $(`<div id="html_133059349297c63c77ed97b0437973f0" style="width: 100.0%; height: 100.0%;">RIBEIRO DE MORAIS B/C</div>`)[0];
+                popup_4c534ecff705df591ccbddf4affbdad4.setContent(html_133059349297c63c77ed97b0437973f0);
+            
+        
+
+        marker_53476516790693b391384b5a6d9571b3.bindPopup(popup_4c534ecff705df591ccbddf4affbdad4)
+        ;
+
+        
+    
+    
+                marker_53476516790693b391384b5a6d9571b3.setIcon(icon_2e4a98aaad6828dc85593455fae78416);
+            
+    
+            var marker_b262e7652483c4d4617ca6fe5544f38b = L.marker(
+                [-23.499417, -46.685989],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_f85eeef00b4f792d2ffc5c3f9bb11b94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9484d4810cc39623329cbf6d3fea29f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e3ddb9d4f78ce242b791c355eff594d = $(`<div id="html_5e3ddb9d4f78ce242b791c355eff594d" style="width: 100.0%; height: 100.0%;">DARCI BITTENCOURT B/C</div>`)[0];
+                popup_9484d4810cc39623329cbf6d3fea29f8.setContent(html_5e3ddb9d4f78ce242b791c355eff594d);
+            
+        
+
+        marker_b262e7652483c4d4617ca6fe5544f38b.bindPopup(popup_9484d4810cc39623329cbf6d3fea29f8)
+        ;
+
+        
+    
+    
+                marker_b262e7652483c4d4617ca6fe5544f38b.setIcon(icon_f85eeef00b4f792d2ffc5c3f9bb11b94);
+            
+    
+            var marker_7ec7715ab6f1cf6b4c0a47a30e963eca = L.marker(
+                [-23.495276, -46.684809],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_de8cb9365d8c6e0fbcd02bbd470381b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57766e411dfb5b1f2d7db8e33054bbbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98557eacc2c48d55ac330a8534a210e0 = $(`<div id="html_98557eacc2c48d55ac330a8534a210e0" style="width: 100.0%; height: 100.0%;">SANTA AUTA B/C</div>`)[0];
+                popup_57766e411dfb5b1f2d7db8e33054bbbd.setContent(html_98557eacc2c48d55ac330a8534a210e0);
+            
+        
+
+        marker_7ec7715ab6f1cf6b4c0a47a30e963eca.bindPopup(popup_57766e411dfb5b1f2d7db8e33054bbbd)
+        ;
+
+        
+    
+    
+                marker_7ec7715ab6f1cf6b4c0a47a30e963eca.setIcon(icon_de8cb9365d8c6e0fbcd02bbd470381b3);
+            
+    
+            var marker_97db96e0e5bd465290ed3697e72c27e9 = L.marker(
+                [-23.4705675, -46.6705775],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_5cb1db868b1ee7c50ef9b1d2a91798d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37009947490c80702689fa6e6d63b322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdea28d95e1a2b76feb63188f32f6e7b = $(`<div id="html_cdea28d95e1a2b76feb63188f32f6e7b" style="width: 100.0%; height: 100.0%;">21646</div>`)[0];
+                popup_37009947490c80702689fa6e6d63b322.setContent(html_cdea28d95e1a2b76feb63188f32f6e7b);
+            
+        
+
+        marker_97db96e0e5bd465290ed3697e72c27e9.bindPopup(popup_37009947490c80702689fa6e6d63b322)
+        ;
+
+        
+    
+    
+                marker_97db96e0e5bd465290ed3697e72c27e9.setIcon(icon_5cb1db868b1ee7c50ef9b1d2a91798d4);
+            
+    
+            var marker_7c99cd4ba1fe2dffbded6601184afc83 = L.marker(
+                [-23.46998575, -46.670573000000005],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_f87fc77a9cc758d12ca2a419a80f1408 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f719dfcdc32c18ad8f8d4ef15e3d8001 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecd515be78710b16d9ebdcb9834e664f = $(`<div id="html_ecd515be78710b16d9ebdcb9834e664f" style="width: 100.0%; height: 100.0%;">21643</div>`)[0];
+                popup_f719dfcdc32c18ad8f8d4ef15e3d8001.setContent(html_ecd515be78710b16d9ebdcb9834e664f);
+            
+        
+
+        marker_7c99cd4ba1fe2dffbded6601184afc83.bindPopup(popup_f719dfcdc32c18ad8f8d4ef15e3d8001)
+        ;
+
+        
+    
+    
+                marker_7c99cd4ba1fe2dffbded6601184afc83.setIcon(icon_f87fc77a9cc758d12ca2a419a80f1408);
+            
+    
+            var marker_90bc0dbff8c6303f065f58b87f77ce53 = L.marker(
+                [-23.512507999999997, -46.690535],
+                {
+}
+            ).addTo(map_717a1ce3ce607c58432892d619f5a5c2);
+        
+    
+            var icon_d19709182e6c88334f53c4d7f567fc8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a625506e0eb3cfe7bf8b94d0d8d77a03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_338708704cd3ad3bce17c4aa6483a783 = $(`<div id="html_338708704cd3ad3bce17c4aa6483a783" style="width: 100.0%; height: 100.0%;">21618</div>`)[0];
+                popup_a625506e0eb3cfe7bf8b94d0d8d77a03.setContent(html_338708704cd3ad3bce17c4aa6483a783);
+            
+        
+
+        marker_90bc0dbff8c6303f065f58b87f77ce53.bindPopup(popup_a625506e0eb3cfe7bf8b94d0d8d77a03)
+        ;
+
+        
+    
+    
+                marker_90bc0dbff8c6303f065f58b87f77ce53.setIcon(icon_d19709182e6c88334f53c4d7f567fc8d);
+            
+</script>
+</html>
